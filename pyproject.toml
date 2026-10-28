@@ -1,0 +1,15 @@
+[project]
+name = "ds-python-basics"
+version = "0.1.0"
+description = "Course materials for ds-python-basics."
+readme = "README.md"
+requires-python = ">=3.13.17"
+dependencies = [
+    "ipykernel"
+]
+
+[tool.uv]
+required-version = ">=0.13.5"
+# Apply certificate fixes without adding unused runtime packages.
+constraint-dependencies = ["certifi>=2026.10.19", "pip>=26.2.2"]
+package = false
